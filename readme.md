@@ -14,8 +14,8 @@
 当前制作镜像版本(或截止更新日期)：1.2.0
 
 - 原项目地址
-  - 官网 [https://passer-by.com/relationship/](https://passer-by.com/relationship/)
-	- 移动版演示地址: [https://passer-by.com/relationship/vue/](https://passer-by.com/relationship/vue/)
+  - 官网 https://passer-by.com/relationship/
+  - 移动版演示地址: https://passer-by.com/relationship/vue/
   - GitHub仓库 https://github.com/mumuy/relationship
 - 我构建docker镜像的仓库
   - GitHub仓库 https://github.com/Firfr/relationship
@@ -36,10 +36,24 @@
 从阿里云或华为云镜像仓库拉取镜像，注意填写镜像标签，镜像仓库中没有`latest`标签
 
 容器内部端口`5147`，可通过设置启动参数的值来指定监听端口。
-
-```bash
-swr.cn-north-4.myhuaweicloud.com/firfe/relationship:1.2.0
-```
+- 国内仓库
+  - AMD64镜像
+    ```bash
+    swr.cn-north-4.myhuaweicloud.com/firfe/relationship:1.2.0
+    ```
+  - ARM64镜像
+    ```bash
+    swr.cn-north-4.myhuaweicloud.com/firfe/relationship:1.2.0-arm64
+    ```
+- DockerHub仓库
+  - AMD64镜像
+    ```bash
+    firfe/relationship:1.2.0
+    ```
+  - ARM64镜像
+    ```bash
+    firfe/relationship:1.2.0-arm64
+    ```
 
 ### docker run 命令部署
 

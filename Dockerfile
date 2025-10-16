@@ -14,4 +14,5 @@ LABEL GitHub主页="https://github.com/Firfr/relationship"
 LABEL Gitee主页="https://gitee.com/firfe/relationship"
 
 # 构建镜像之前运行命令设置权限 chmod -R 777 ./
-# docker build -t firfe/relationship:1.2.0 .
+# docker buildx build --platform linux/amd64 --tag firfe/relationship:1.2.0 --load .
+# docker buildx build --platform linux/arm64 --tag firfe/relationship:1.2.0-arm64 --load .
